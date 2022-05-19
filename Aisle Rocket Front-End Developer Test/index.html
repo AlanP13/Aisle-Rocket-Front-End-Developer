@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage for Responsive Banner</title>
+    <!--Style links-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- header section starts  -->
+    <header class="header">
+        <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i> MeatRUs </a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#categories">Categories</a>
+            <a href="#review">Review</a>
+        </nav>
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="image/cart-img-1.png" alt="">
+                <div class="content">
+                    <h3>Cast Iron Grill Press</h3>
+                    <span class="price">$13.99/-</span>
+                    <span class="quantity">Qty : 1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="image/cart-img-2.png" alt="">
+                <div class="content">
+                    <h3>Sharp Needle Blade Tenderizer</h3>
+                    <span class="price">$11.97/-</span>
+                    <span class="quantity">Qty : 1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="image/cart-img-3.png" alt="">
+                <div class="content">
+                    <h3>Carving Cutting Board</h3>
+                    <span class="price">$39.49/-</span>
+                    <span class="quantity">Qty : 1</span>
+                </div>
+            </div>
+            <div class="total"> Total : $65.45/- </div>
+            <a href="#" class="btn">Checkout</a>
+        </div>
+        <form action="" class="login-form">
+            <h3>Login Now</h3>
+            <input type="email" placeholder="your email" class="box">
+            <input type="password" placeholder="your password" class="box">
+            <p>Forget Your Password <a href="#">Click Here</a></p>
+            <p>Don't Have an Account <a href="#">Create Now</a></p>
+            <input type="submit" value="login now" class="btn">
+        </form>
+        <!--pop up starts-->
+        <div class="popup">
+            <div class="contentBox">
+                <div class="content">
+                    <div class="tag">
+                        <img src="image/tag.png" alt="">
+                    </div>
+                    <span>FEATURED DEAL</span>
+                    <h3>$40 OFF THE YUMMLY SMART MEAT THERMOMETER WITH BLUETOOTH</h3>
+                    <p>Get the results you want, every time, with the completely wireless Yummly® meat thermometer.</p>
+                    <a href="#" class="button">SHOP NOW ></a>
+                </div>
+                <div class="close"></div>
+            </div>
+        </div>
+        <!--pop up ends-->
+
+        <!--automatic show popup starts-->
+        <script>
+            const popup = document.querySelector('.popup');
+            const close = document.querySelector('.close');
+            window.onload = function() {
+                setTimeout(function() {
+                    popup.style.display = "block";
+                }, 100)
+            }
+            close.addEventListener('click', () => {
+                popup.style.display = "none";
+            })
+        </script>
+        <!--automatic show popup ends-->
+
+    </header>
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>get <span>organic products</span> and accessories for your <span>perfect grill out</span></h3>
+            <a href="#" class="btn">shop now</a>
+        </div>
+    </section>
+    <!-- home section ends -->
+
+    <!-- products section starts  -->
+    <section class="products" id="products">
+        <h1 class="heading"><span>fresh</span> products</h1>
+        <div class="swiper product-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="image/product-1.png" alt="">
+                    <h3>NY Strip</h3>
+                    <div class="price"> $9.99/- - 20.99/- </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="image/product-2.png" alt="">
+                    <h3>sirloin</h3>
+                    <div class="price"> $7.99/- - 14.99/- </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="image/product-3.png" alt="">
+                    <h3>rib eye</h3>
+                    <div class="price"> $10.99/- - 25.99/- </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="image/product-4.png" alt="">
+                    <h3>filet</h3>
+                    <div class="price"> $15.99/- - 20.99/- </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+        </div>
+        <h1 class="heading"> grill <span>accessories</span></h1>
+        <div class="swiper product-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="image/product-5.png" alt="">
+                    <h3>Meat Injector</h3>
+                    <div class="price"> $19.99/- </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="image/product-6.png" alt="">
+                    <h3>Griddle Tools Set</h3>
+                    <div class="price"> $21.99/- </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="image/product-7.png" alt="">
+                    <h3>Grill Tool Set</h3>
+                    <div class="price"> $29.99/- </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="image/product-8.png" alt="">
+                    <h3>Propane Torch</h3>
+                    <div class="price"> $63.89/- </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- products section ends -->
+
+    <!--featured deals banner starts-->
+    <div class="banner-container">
+
+        <div class="banner">
+            <div class="content">
+                <div class="tag">
+                    <img src="image/tag.png" alt="">
+                </div>
+                <span>FEATURED DEAL</span>
+                <h3>$40 OFF THE YUMMLY SMART MEAT THERMOMETER WITH BLUETOOTH</h3>
+                <p>Get the results you want, every time, with the completely wireless Yummly® meat thermometer.</p>
+                <a href="#" class="button">SHOP NOW ></a>
+            </div>
+            <div class="close1"></div>
+        </div>
+
+    </div>
+
+    <!--automatic show banner starts-->
+    <script>
+        const banner = document.querySelector('.banner');
+        const close1 = document.querySelector('.close1');
+        close1.addEventListener('click', () => {
+            banner.style.display = "none";
+        })
+    </script>
+    <!--automatic show banner ends-->
+    <!--featured deals banner ends-->
+
+    <!-- categories section starts  -->
+    <section class="categories" id="categories">
+        <h1 class="heading"><span> product</span>categories</h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="image/cat-1.png" alt="">
+                <h3>Meat</h3>
+                <p>upto 45% off</p>
+                <a href="#" class="btn">shop now</a>
+            </div>
+            <div class="box">
+                <img src="image/cat-2.png" alt="">
+                <h3>accessories</h3>
+                <p>upto 45% off</p>
+                <a href="#" class="btn">shop now</a>
+            </div>
+        </div>
+    </section>
+    <!-- categories section ends -->
+
+    <!-- review section starts  -->
+    <section class="review" id="review">
+        <h1 class="heading"> customer's <span>review</span> </h1>
+        <div class="swiper review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="image/pic-1.png" alt="">
+                    <p>The flavor is no where near as bad as people are making it out to be...They are very thin steaks. Perfect for sandwiches or someone who limits their portions. The reason why I rated 3 stars and not 5 is because they are seasoned. Which
+                        means you can't add any steak seasoning that already has salt in it or these will be way to salty. I pretty much just use black pepper only to season these and they are good. Perfect size for breakfast with some eggs or for a person
+                        limiting their portions(like me) I had weight loss surgery and I like that these are pre-portioned out.</p>
+                    <h3>jeremy clarkson</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/pic-2.png" alt="">
+                    <p>Excellent press!!! But, it needs to be seasoned. Cuisinart didn’t season it well. And don’t believe the reviews that says it rusts... it’s cast iron people, iron rusts unless you dry it with a towel or cloth. You can not leave anything
+                        cast iron to air dry. The proper cleaning method is just water and a sponge. Use kosher salt to scrub. Rinse and towel dry and you will never have a rust issue. But other then that, this is a heavy press and well built. It’s not
+                        a griswold so don’t expect the absolute best but a great press nonetheless.</p>
+                    <h3>phoebe buffay</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/pic-3.png" alt="">
+                    <p>This meat injector is easy to use. It comes with 3 different injection needles, cleaning brushes and additional o-rings. Metal on the plungers flaked after 2 washes and didn't trust to use on food after that I believe should have lasted
+                        a long time. I have purchased more for gifts.</p>
+                    <h3>james may</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/pic-4.png" alt="">
+                    <p>This is a multi-use device, but I purchased it for BB-Queue get-togethers with my friends. I always had difficulties getting the charcoal going with my friends sitting, waiting for their Kabob or BBQue meat, and as you all know lighting
+                        the fire and the charcoal (at least for me) is oftentimes a little bit of challenge. Well, not with this torch. I had everything by the evening of the day I received the torch. I ran to the backyard to learn how to use it. Here
+                        I should war n everyone, don't use the TORCH before you read the instructions. Well, the lighting of the charcoal was a cinch. I even tried to cook some meat with the torch itself. Before you know it, the meat was smoking and dripping
+                        everywhere. I tell you, this is a wonderful thing to have if you enjoy the outdoor grill and BBQ, etc.</p>
+                    <h3>amy farrah fowler</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- review section ends -->
+
+    <!-- footer section starts  -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3> MeatRUs <i class="fas fa-shopping-basket"></i> </h3>
+                <p>This is the best place for meat lovers. Good steak and pork. The burgers are juicy and tasty. Have visited this place multiple time. This place is just perfect and amazing. The coolers, poutine, steaks, pork, burgers are delicious. Good
+                    service and great staff.</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#" class="links"> <i class="fas fa-phone"></i> +1 123-456-7890 </a>
+                <a href="#" class="links"> <i class="fas fa-phone"></i> +1 111-222-3333 </a>
+                <a href="#" class="links"> <i class="fas fa-envelope"></i> meatrus@gmail.com </a>
+                <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> Chicago, il - 60616 </a>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> features </a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> products </a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> categories </a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> review </a>
+            </div>
+            <div class="box">
+                <h3>newsletter</h3>
+                <p>subscribe for latest updates</p>
+                <input type="email" placeholder="your email" class="email">
+                <input type="submit" value="subscribe" class="btn">
+                <img src="image/payment.png" class="payment-img" alt="">
+            </div>
+        </div>
+        <div class="credit"> created by <span> Alan Palayil </span> | Online Template Referred </div>
+    </section>
+    <!-- footer section ends -->
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
